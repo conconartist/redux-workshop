@@ -1,6 +1,7 @@
 import React from 'react';
 import Todo from '../components/ToDo';
 import { connect } from 'react-redux';
+import { render } from 'react-dom';
 
 const ToDoList = ({todos}) => {
     const displayTodos = todos.map(todo => {
@@ -11,7 +12,6 @@ const ToDoList = ({todos}) => {
             />
         )
     })
-
     return (
         <ul>
             {displayTodos}

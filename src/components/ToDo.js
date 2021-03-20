@@ -2,7 +2,7 @@ import React from 'react';
 
 const ToDo = ({ id, text, completed }) => {
     return (
-        <li>{text}</li>
+        <li id={id}>{text}</li>
     )
 }
 
